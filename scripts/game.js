@@ -36,9 +36,7 @@ letter.addEventListener("click", function (event) {
                 dashes.innerHTML = dashedWord;
                 correctletter += 1
             }
-            else if(correctletter == Word.length){
-                alert("You win")
-        }
+           
         
         }
         }
