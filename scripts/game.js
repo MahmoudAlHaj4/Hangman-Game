@@ -34,7 +34,7 @@ letter.addEventListener("click", function (event) {
             if (currentLetter === clickedLetter) {
                 dashedWord = dashedWord.substring(0, i)  + clickedLetter + dashedWord.substring(i + 1);
                 dashes.innerHTML = dashedWord;
-                correctletter += 1
+                
             }
            
         
