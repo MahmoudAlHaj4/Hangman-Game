@@ -67,7 +67,8 @@ letter.addEventListener("click", function (event) {
             }
             else if(wrongLetter == 7){
                 
-        }
+                alert("you lost")
+            }
         }
     }
 });
