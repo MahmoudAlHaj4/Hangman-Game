@@ -28,7 +28,7 @@ letter.addEventListener("click", function (event) {
 
         if(letterInWord == true){
             for (let i = 0; i < Word.length; i++) {
-        const currentLetter = Word[i].toLowerCase();
+            const currentLetter = Word[i].toLowerCase();
 
         if (currentLetter === clickedLetter) {
             dashedWord = dashedWord.substring(0, i)  + clickedLetter + dashedWord.substring(i + 1);
