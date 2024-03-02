@@ -34,9 +34,39 @@ letter.addEventListener("click", function (event) {
             dashedWord = dashedWord.substring(0, i)  + clickedLetter + dashedWord.substring(i + 1);
             dashes.innerHTML = dashedWord;
         }
-        else{
-            console.log("Wrong")
-            
+        
+        }
+        }
+        else if(letterInWord == false){
+            wrongLetter +=1 
+            console.log(wrongLetter)
+            head()
+            if(wrongLetter == 2){
+                console.log(wrongLetter)
+                body()
+            }
+            else if(wrongLetter == 3){
+                console.log(wrongLetter)
+                leftHand()
+
+            }
+            else if(wrongLetter == 4){
+                console.log(wrongLetter)
+                rightHand()
+
+            }
+            else if(wrongLetter == 5){
+                console.log(wrongLetter)
+                leftLeg()
+
+            }
+            else if(wrongLetter == 6){
+                console.log(wrongLetter)
+                rightLeg()
+                
+            }
+            else if(wrongLetter == 7){
+                
         }
         }
     }
