@@ -17,6 +17,7 @@ dashes.innerHTML = dashedWord;
 
 const letter = document.querySelector(".letters");
 let wrongLetter = 0
+let correctletter = 0
 
 letter.addEventListener("click", function (event) {
     if (event.target.classList.contains("letter")) {
