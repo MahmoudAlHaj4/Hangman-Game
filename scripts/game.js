@@ -31,9 +31,13 @@ letter.addEventListener("click", function (event) {
             for (let i = 0; i < Word.length; i++) {
             const currentLetter = Word[i].toLowerCase();
 
-        if (currentLetter === clickedLetter) {
-            dashedWord = dashedWord.substring(0, i)  + clickedLetter + dashedWord.substring(i + 1);
-            dashes.innerHTML = dashedWord;
+            if (currentLetter === clickedLetter) {
+                dashedWord = dashedWord.substring(0, i)  + clickedLetter + dashedWord.substring(i + 1);
+                dashes.innerHTML = dashedWord;
+                correctletter += 1
+            }
+            else if(correctletter == Word.length){
+                alert("You win")
         }
         
         }
