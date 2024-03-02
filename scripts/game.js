@@ -22,5 +22,18 @@ letter.addEventListener("click", function (event) {
         const clickedLetter = event.target.textContent.toLowerCase();
         console.log("Letter:", clickedLetter);
         console.log("Word:", Word);
+
+    for (let i = 0; i < Word.length; i++) {
+        const currentLetter = Word[i].toLowerCase();
+
+        if (currentLetter === clickedLetter) {
+            dashedWord = dashedWord.substring(0, i)  + clickedLetter + dashedWord.substring(i + 1);
+            dashes.innerHTML = dashedWord;
+        }
+        else{
+            console.log("Wrong")
+            
+        }
+        }
     }
 });
