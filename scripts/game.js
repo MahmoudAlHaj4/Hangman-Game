@@ -23,6 +23,8 @@ letter.addEventListener("click", function (event) {
         const clickedLetter = event.target.textContent.toLowerCase();
         console.log("Letter:", clickedLetter);
         console.log("Word:", Word);
+        const letterInWord = Word.toLowerCase().includes(clickedLetter)
+        console.log("letter in word is:" , letterInWord)
 
     for (let i = 0; i < Word.length; i++) {
         const currentLetter = Word[i].toLowerCase();
